@@ -1,3 +1,8 @@
+var background_noise = 0;
+var dog = 0;
+var cat = 0;
+var lion = 0;
+var cow = 0;
 function startClassifictaion() {
     navigator.mediaDevices.getUserMedia({audio:true});
     classifier = ml5.soundClassifier('https://teachablemachine.withgoogle.com/models/a3EHcPcDm/model.json',modelReady);
